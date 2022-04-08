@@ -1,0 +1,63 @@
+﻿@model IEnumerable<THCNPM_Lab5.Models.tblSINHVIEN>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GioiTinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaLop)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaTinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DTB)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoTen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgaySinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GioiTinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaLop)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaTinh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DTB)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaSv }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaSv }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaSv })
+        </td>
+    </tr>
+}
+
+</table>

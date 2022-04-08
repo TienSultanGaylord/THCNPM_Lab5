@@ -1,0 +1,66 @@
+﻿@model THCNPM_Lab5.Models.tblSINHVIEN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblSINHVIEN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GioiTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaTinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DTB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DTB)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaSv }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
